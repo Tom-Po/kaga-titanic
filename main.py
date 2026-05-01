@@ -8,11 +8,16 @@ def main():
     
     survived = data[data["Survived"] == 1]
     non_survivant = data[data["Survived"] == 0]
-    print("\nSurvived")
-    print("\nnon_survivant")
 
-    data_sorted = data.sort_values(by="Name")
-    print(data_sorted["Name"])
+    #Survivants
+    print("\nSurvived")
+    print(survived[["Name","Survived"]].head())
+    #Non-survivant
+    print("\nnon_survivant")
+    print(non_survivant[["Name", "Survived"]].head())    
+   
+
+    
 
 
 # On pourra voir ça ensemble mais ne t'occupe pas de ça
