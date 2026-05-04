@@ -1,4 +1,6 @@
 # Ici les imports 
+# J'ai rajouté un commentaire 
+
 import pandas as pd
 
 def get_survived(data):
